@@ -1,13 +1,16 @@
 name: deploy to lambda
 on: [push]
 jobs:
-
   deploy_zip:
     name: deploy lambda function
     runs-on: ubuntu-latest
     steps:
       - name: checkout source code
-        uses: actions/checkout@v3        
+        uses: actions/checkout@v3               
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm i
       - run: |
           zip -r deployment.zip *
       - name: default deploy
