@@ -1,7 +1,10 @@
 require('dotenv').config()
 
 exports.handler = async (event) => {
-    const response = "Hello from AWS!\nEvent: " + JSON.stringify(event, null, 2)
+    let response = "Hello from AWS!\nEvent: " + JSON.stringify(event, null, 2)
+    
+    // your code here
+    
     return response
 };
 
