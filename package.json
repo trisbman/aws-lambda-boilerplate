@@ -12,7 +12,7 @@
     "url": "git+https://github.com/trisbman/aws-lambda-boilerplate.git"
   },
   "keywords": [
-    "boilerplate"
+    "boilerplate", "lambda", "aws"
   ],
   "author": "",
   "license": "ISC",
@@ -24,8 +24,5 @@
     "cors": "^2.8.5",
     "express": "^4.18.1",
     "nodemon": "^2.0.19"
-  },
-  "dependencies": {
-    "dotenv": "^16.0.1"
   }
 }
